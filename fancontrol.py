@@ -11,9 +11,9 @@ def main():
     while True:
         vcgm = Vcgencmd()
         temp = vcgm.measure_temp()
-        if  temp >= 45:
+        if  temp >= 40:
             fan.on()
-        elif temp <= 40:
+        elif temp <= 35:
             fan.off()
         time.sleep(1)
 
